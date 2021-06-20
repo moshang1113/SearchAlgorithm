@@ -1,19 +1,4 @@
-#include <set>
-#include <map>
-#include <deque>
-#include <queue>
-#include <stack>
-#include <cmath>
-#include <ctime>
-#include <bitset>
-#include <cstdio>
-#include <string>
-#include <vector>
-#include <cstdlib>
-#include <cstring>
-#include <iostream>
-#include<iomanip>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
@@ -30,10 +15,10 @@ void SequenceSearch(int key, int n) {
 	for (int i = 1; i <= n; i++)
 		if (t[i] == key)
 		{
-			cout << "利用顺序查找成功，下标为" << i << endl;
+			cout << "鍒╃敤椤哄簭鏌ユ壘鎴愬姛锛屼笅鏍囦负" << i << endl;
 			return;
 		}
-	cout << "查找失败";
+	cout << "鏌ユ壘澶辫触";
 	return;
 }
 void BinarySearch(int key, int n) {
@@ -42,7 +27,7 @@ void BinarySearch(int key, int n) {
 	while (left <= right) {
 		int m = (left + right) / 2;
 		if (key == t[m]) {
-			cout << "二分查找成功下标为：" << m << endl;
+			cout << "浜屽垎鏌ユ壘鎴愬姛涓嬫爣涓猴細" << m << endl;
 			return;
 		}
 		else if (key < t[m])
@@ -50,7 +35,7 @@ void BinarySearch(int key, int n) {
 		else
 			left = m + 1;
 	}
-	cout << "查找失败";
+	cout << "鏌ユ壘澶辫触";
 	return;
 }
 int main()
